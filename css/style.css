@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.promo {
+  background: url(../img/coffee_house_bg.png) no-repeat center/cover;
+}
+.promo .promo_header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 111px;
+}
+.promo .header_logo a {
+  color: rgb(255, 255, 255);
+  font-family: Merienda;
+  font-size: 12px;
+  line-height: 17.33px;
+  text-decoration: none;
+  text-align: center;
+  padding-left: 40px;
+  margin-bottom: 22px;
+}
+.promo .promo_h1 {
+  font-family: Merienda;
+  font-size: 40px;
+  line-height: 57.76px;
+  text-align: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  padding-bottom: 20px;
+}
+.promo .promo_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 35px;
+}
+.promo .promo_p {
+  font-family: Merienda;
+  font-size: 24px;
+  line-height: 34.66px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding-bottom: 18px;
+}
+.promo .promo_btn {
+  display: flex;
+  justify-content: center;
+}
+.promo .more_btn {
+  width: 120px;
+  height: 30px;
+  border: 1px solid white;
+  text-align: center;
+  background: none;
+  color: white;
+  margin-bottom: 201px;
+}
+.promo .promo_btn a {
+  font-family: Merienda;
+  font-size: 14px;
+  line-height: 20.22px;
+  text-align: left;
+  color: white;
+  text-decoration: none;
+}
+
+.about {
+  padding: 80px 0 100px;
+}
+.about h1 {
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: Merienda;
+  font-size: 24px;
+  line-height: 34.66px;
+  color: black;
+}
+.about .about_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 35px;
+}
+.about .about_p {
+  font-family: Merienda;
+  font-size: 14px;
+  text-align: center;
+  color: black;
+  width: 589px;
+  height: 223px;
+  margin: 0 auto;
+}
+
+.menu {
+  align-items: center;
+  padding: 80px 0 110px;
+  background: url(../img/menu.bg.jpg) no-repeat center/cover;
+}
+.menu h1 {
+  font-family: Merienda;
+  font-size: 24px;
+  line-height: 34.66px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.menu .menu_box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  text-align: center;
+}
+.menu .menu_item {
+  background: rgba(255, 255, 255, 0.65);
+  height: 240px;
+  width: 220px;
+  border-radius: 8px;
+  padding: 22px 0 88px;
+  margin: 0 auto;
+}
+.menu p {
+  font-family: Merienda;
+  font-size: 14px;
+  line-height: 20.22px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  padding-bottom: 10px;
+}
+.menu h4 {
+  font-family: Merienda;
+  font-size: 14px;
+  line-height: 20.22px;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.footer {
+  padding: 52px 0 80px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+.footer a {
+  font-family: Merienda;
+  font-size: 12px;
+  line-height: 17.33px;
+  text-align: left;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin-left: 40px;
+}
+.footer .footer_logo {
+  padding-bottom: 30px;
+}
+
+/* 1200, 992, 768, 576, 360 */
+@media (max-width: 1200px) {
+  .container {
+    width: 900px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 500px;
+  }
+  .menu_box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0 20px 0;
+  }
+  #item_none {
+    display: none;
+  }
+  .about_p {
+    max-width: 500px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .about_p {
+    height: 260px;
+    max-width: 350px;
+    font-size: 12px;
+  }
+  .menu_box {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 0 40px 0;
+  }
+}
